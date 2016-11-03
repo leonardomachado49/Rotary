@@ -5,7 +5,7 @@ class MainController extends CI_Controller {
 
 	public function index()
 	{
-		$data['categorys'] = $this->CategoriaModel->getCategorys();
+		$data['categorys'] = $this->CategoriaModel->getCategories();
 		$this->template->load('template/template','main/mainView',$data);		
 	}
 

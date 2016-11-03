@@ -4,7 +4,7 @@
 <div class="row container">
 	<div class="col s12 center">
 		<div class="card-panel">
-			<h4 class="collorTextBtnMenu"><strong>Homenageados</strong></h4>
+			<h4 class="collorTextBtnMenu"><strong><?php echo $category[0]['category_name']; ?></strong></h4>
 			<a href="<?php echo base_url('novo-item')."/".$id_category?>" class="collorTextBtnMenu left btn-flat  colorMenu waves-effect waves-yellow"><strong>Novo Item</strong></a>
 			<br>
 			<br>

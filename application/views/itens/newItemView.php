@@ -16,15 +16,15 @@
               <label for="name">Nome</label>
             </div>
             <div class="input-field col s6">
-              <input placeholder="Título" id="title" type="text" class="validate" name="title" required>
+              <input placeholder="Título" id="title" type="text" class="validate" name="title">
               <label for="title">Título</label>
             </div>
             <div class="input-field col s6">
-              <input placeholder="Resumo" id="resumo" type="text" class="validate" name="resumo" required>
+              <input placeholder="Resumo" id="resumo" type="text" class="validate" name="resumo">
               <label for="resumo">Resumo</label>
             </div>
             <div class="input-field col s6">
-              <input placeholder="Citação" id="citacao" type="text" class="validate" name="citacao" required>
+              <input placeholder="Citação" id="citacao" type="text" class="validate" name="citacao">
               <label for="citacao">Citação</label>
             </div>
             <div class="input-field col s12">
@@ -34,7 +34,7 @@
               <label for="desc" style="margin-top: -3px;">Descrição</label>
             </div>
             <div class="input-field col s12">
-              <input id="file" type="file" class="validate" name="userfile" size="1000"  style="margin-top: 15px;">
+              <input id="file" type="file" class="validate" name="userfile" size="1000000"  style="margin-top: 15px;" required>
               <label for="file">Foto do Item</label>
             </div>
           </div>

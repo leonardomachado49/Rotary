@@ -13,10 +13,10 @@
 
   <nav class="colorMenu">
     <div class="nav-wrapper container">
-      <a href="#!" class="brand-logo"><img src="<?php echo base_url('includes/imgs/Logo.png'); ?>" class="responsive-img" style="width: 300px;"></a>
+      <a href="#!" class="brand-logo"><img src="<?php echo base_url('/imgs/Logo_Rotary_Torres_Marca_Branca.png'); ?>" class="responsive-img" style="width: 300px; margin-top: 5px;"></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="<?php echo base_url(''); ?>" class="collorTextBtnMenu"><strong>Home</strong></a></li>
+        <li><a href="<?php echo base_url(''); ?>" class="collorTextBtnMenu"><strong><b>Home</b></strong></a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="sass.html"  class="collorTextBtnMenu">Sass</a></li>
@@ -29,7 +29,14 @@
   <div>
     <?php echo $contents ?>
   </div>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="<?php echo base_url('includes/js/jquery.js')?>"></script>
   <script type="text/javascript" src="<?php echo base_url('includes/js/materialize.js')?>"></script>
+  <script type="text/javascript">
+    
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+  </script>
 </body>
 </html>

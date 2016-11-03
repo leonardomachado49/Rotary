@@ -16,11 +16,11 @@
               <label for="name">Nome</label>
             </div>
             <div class="input-field col s12">
-              <input id="desc" type="text" class="validate" name="desc" required="">
+              <input id="desc" type="text" class="validate" name="desc">
               <label for="desc">Descrição</label>
             </div>
             <div class="input-field col s12">
-            <input id="file" type="file" class="validate" name="userfile" size="1000"  style="margin-top: 15px;">
+            <input id="file" type="file" class="validate" name="userfile" size="1000000"  style="margin-top: 15px;">
               <label for="file">Icon da Categoria</label>
             </div>
           </div>

@@ -8,6 +8,11 @@
       <?php foreach ($dados as $item) { ?>
       <a href="<?php echo base_url('itens')."/".$id_category;?>" class="collorTextBtnMenu left btn-flat  colorMenu waves-effect waves-yellow"><strong>Voltar</strong></a>
       <br>
+       <div class="col s12 center">
+            <img src="<?php echo base_url('imgs')."/".$item['item_image_path']; ?>" class="responsive-img" style="width: 150px;">
+        </div>
+      <br>
+      <br>
       <br>
       <div class="row">
         <form class="col s12" action="<?php echo base_url('alterar-item')."/".$item['item_id']."/".$id_category; ?>" method="POST" enctype="multipart/form-data">
@@ -34,8 +39,13 @@
               </textarea>
               <label for="desc" style="margin-top: -3px;">Descrição</label>
             </div>
+            <div class="input-field col s12">
+              <input id="file" type="file" class="validate" name="userfile" size="1000000"  style="margin-top: 15px;">
+              <label for="file">Alterar Foto do Item</label>
+            </div>
           </div>
           <input type="hidden" value="<?php echo $id_category;?>" name="id_category" required></input>
+          <input type="hidden" value="<?php echo $item['item_image_path'];?>" name="image" required></input>
           <b><input type="submit" class=" right btn-flat  colorMenu  waves-yellow"></input></b>
         </form>
       </div>
